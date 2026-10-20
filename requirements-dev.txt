@@ -1,0 +1,2 @@
+# Formatting only; no PyTorch installation needed.
+black==25.9.0

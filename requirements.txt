@@ -1,0 +1,15 @@
+# Versions derived from the supplied environment; full runtime not revalidated.
+# Target: Python 3.9 on Linux with an NVIDIA GPU.
+torch==2.0.0
+torchvision==0.15.1
+numpy==1.24.3
+scipy==1.9.1
+Pillow==9.5.0
+matplotlib==3.7.1
+scikit-image==0.19.3
+opencv-python==4.7.0.72
+lpips==0.1.4
+blobfile==2.0.2
+mpi4py==3.1.4
+tqdm==4.65.0
+six==1.16.0

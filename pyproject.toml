@@ -1,0 +1,7 @@
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+# Vendored libraries retain their upstream formatting.
+extend-exclude = '''
+/(inversefed|guided_diffusion|simpleAICV)/
+'''

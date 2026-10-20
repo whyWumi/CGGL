@@ -1,0 +1,47 @@
+# Local Python and editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.egg-info/
+build/
+dist/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Datasets, checkpoints and generated experiment artifacts
+*.pth
+*.pt
+*.pth.tar
+*.ckpt
+*.tensor
+*.npz
+*.npy
+*.log
+/dataset/*
+!/dataset/README.md
+/checkpoints/*
+!/checkpoints/README.md
+/model/*
+!/model/README.md
+/log/*
+!/log/README.md
+/images/*
+!/images/README.md
+/result/*
+!/result/README.md
+/output/
+/temp_data/
+/tables/
+/trainedmodel/
