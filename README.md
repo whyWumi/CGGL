@@ -8,7 +8,7 @@ Bin Pu, Zhizhi Liu, Liwen Wu, Kai Xu, Bocheng Liang, Ziyang He, Benteng Ma, Lei 
 
 CGGL combines client-side model poisoning and diffusion priors to study image reconstruction from aggregated gradients in federated learning.
 
-This repository contains a cleaned research code snapshot. The supplied scripts primarily configure CIFAR-100; datasets, pretrained weights, and historical results are distributed separately from source code. Full paper reproduction has **not** been validated for this snapshot. Parameter differences and incomplete branches are documented in the [reproduction notes](docs/REPRODUCIBILITY.md).
+
 
 ## Repository layout
 
@@ -54,9 +54,6 @@ For an existing Python 3.9 environment, install a compatible PyTorch 2.0.0 / tor
 2. Put `Cifar100_Normal_Model.pth` in `model/` before Stage 1. Stages 2 and 3 require the malicious model; Stage 3 also requires the poisoned global model. Existing supplied checkpoints can be used to skip the preceding stages.
 3. The CIFAR-100 wrapper downloads data into `dataset/` when an experiment starts. See [`dataset/README.md`](dataset/README.md) for the resulting layout.
 
-See [`checkpoints/README.md`](checkpoints/README.md) for file hashes and the optional ImageNet branch. No public download URL for the supplied custom weights has been established.
-
-Paths default to folders inside this repository. Override them before launching with these environment variables:
 
 | Variable | Default |
 | --- | --- |
@@ -117,8 +114,3 @@ GitHub Actions runs formatting, Python 3.9 syntax parsing, and launcher help. Th
 }
 ```
 
-## Acknowledgments and licensing
-
-The supplied project includes modified or vendored components from [Inverting Gradients](https://github.com/JonasGeiping/invertinggradients), [Guided Diffusion](https://github.com/openai/guided-diffusion), and [SimpleAICV](https://github.com/zgcr/SimpleAICV_pytorch_training_examples). Its original folder name and README also refer to PGLC. See [third-party notices](THIRD_PARTY_NOTICES.md) for provenance and retained license texts.
-
-A project-wide license for the original CGGL/PGLC-derived code was not present in the supplied files. This cleanup does not assign a new license to that code.
