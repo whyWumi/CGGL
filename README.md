@@ -4,7 +4,7 @@
 Bin Pu, Zhizhi Liu, Liwen Wu, Kai Xu, Bocheng Liang, Ziyang He, Benteng Ma, Lei Zhao  
 *Information Fusion*, 123 (2025), 103292.
 
-[Paper](https://doi.org/10.1016/j.inffus.2025.103292) · [中文说明](README.zh-CN.md) · [Reproduction notes](docs/REPRODUCIBILITY.md)
+[Paper](https://doi.org/10.1016/j.inffus.2025.103292) · [中文说明](README.zh-CN.md) · 
 
 CGGL combines client-side model poisoning and diffusion priors to study image reconstruction from aggregated gradients in federated learning.
 
